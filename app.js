@@ -26,7 +26,6 @@ function clickHandler() {
     fetch(createURL(content))
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             outputTxt.innerText = json.contents.translated;
 
         })
